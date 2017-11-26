@@ -6,8 +6,9 @@ document.addEventListener("keydown", onKeydown(e), false)
 
 }
 
-function onKeydown(e){
+function onKeydown(){
   var index = 0
+  var e = event.key
   const key = parseInt(e.detail || e.which)
   if (key === code[index]){
     index++;

@@ -8,4 +8,16 @@ document.addEventListener(keydown, onKeydown(input))
 
 function onKeydown(input){
   var index = 0
+  const key = parseInt(input.detail || input.which)
+  if (key === code[index]){
+    index++;
+  
+  if (index === code.length){
+    alert("Hurray!");
+    index = 0;
+  }
+}
+else{
+  index = 0;
+}
 }

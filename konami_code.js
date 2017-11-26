@@ -11,7 +11,7 @@ document.addEventListener("keydown", function(e) {
   
   if (index === code.length){
     alert("Hurray!");
-    console.log("Hurray!")
+   
     index = 0;
   }
 }

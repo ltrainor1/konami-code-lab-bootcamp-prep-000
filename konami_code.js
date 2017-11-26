@@ -2,13 +2,13 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init() {
 
-document.addEventListener("keydown", onKeydown())
+document.addEventListener("keydown", onKeydown(e), false)
 
 }
 
-function onKeydown(input){
+function onKeydown(e){
   var index = 0
-  const key = parseInt(input.detail || input.which)
+  const key = parseInt(e.detail || e.which)
   if (key === code[index]){
     index++;
   

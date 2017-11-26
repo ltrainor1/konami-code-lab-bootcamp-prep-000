@@ -8,7 +8,7 @@ document.addEventListener("keydown", function(e) {
   
   if (key === code[0]){
     index++;
-  console.log(index)
+  
   if (index === code.length){
     alert("Hurray!");
     console.log("Hurray!")
